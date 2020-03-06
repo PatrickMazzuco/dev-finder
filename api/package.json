@@ -1,11 +1,11 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "build": "babel ./src --out-dir ./build",
-    "start": "babel-node src/index.js",
-    "dev": "nodemon --exec babel-node src/index.js",
+    "start": "babel-node src/server.js",
+    "dev": "nodemon --exec babel-node src/server.js",
     "lint": "eslint ."
   },
   "license": "MIT",
