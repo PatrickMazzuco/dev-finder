@@ -2,6 +2,12 @@
   "name": "api",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./build",
+    "start": "babel-node src/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "lint": "eslint ."
+  },
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
