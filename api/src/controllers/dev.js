@@ -1,5 +1,6 @@
 import devService from '../services/dev';
 import github from '../utils/githubAPI';
+import parseStringAsArray from '../utils/parseStringAsArray';
 
 exports.createDev = async (req, res) => {
   const { githubUsername, techs, latitude, longitude } = req.body;
@@ -8,7 +9,7 @@ exports.createDev = async (req, res) => {
     return res.status(400).json({ message: 'Username required' });
   }
 
-  const devExists = devService.findDev({ githubUsername });
+  const devExists = await devService.findDev({ githubUsername });
 
   if (devExists) {
     return res.status(400).json({ message: 'User already registered' });
@@ -17,7 +18,7 @@ exports.createDev = async (req, res) => {
   const apiResponse = await github.get(`/users/${githubUsername}`);
   const { name, avatar_url: avatarUrl, bio } = apiResponse.data;
 
-  const techArray = techs.split(',').map(tech => tech.trim());
+  const techArray = parseStringAsArray(techs);
 
   const location = {
     type: 'Point',

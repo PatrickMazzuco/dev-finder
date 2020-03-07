@@ -10,6 +10,11 @@ exports.findDev = async query => {
   return dev;
 };
 
+exports.findDevs = async query => {
+  const devs = await Dev.find(query);
+  return devs;
+};
+
 exports.getAll = async () => {
   const devs = await Dev.find();
   return devs;
