@@ -1,10 +1,11 @@
 import Dev from '../models/Dev';
 
-const createDev = async dev => {
+exports.createDev = async dev => {
   const newDev = await Dev.create(dev);
   return newDev;
 };
 
-export default {
-  createDev
+exports.findDev = async query => {
+  const dev = await Dev.findOne(query);
+  return dev;
 };
