@@ -9,4 +9,9 @@ const router = Router();
 // @access  Public
 router.post('/devs', devController.createDev);
 
+// @route   GET /devs
+// @desc    Fetch all devs
+// @access  Public
+router.get('/devs', devController.getAll);
+
 export default router;

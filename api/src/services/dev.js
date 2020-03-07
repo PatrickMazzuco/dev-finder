@@ -9,3 +9,8 @@ exports.findDev = async query => {
   const dev = await Dev.findOne(query);
   return dev;
 };
+
+exports.getAll = async () => {
+  const devs = await Dev.find();
+  return devs;
+};

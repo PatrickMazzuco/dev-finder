@@ -41,3 +41,13 @@ exports.createDev = async (req, res) => {
     return res.status(500).send({ message: 'Server Error' });
   }
 };
+
+exports.getAll = async (req, res) => {
+  try {
+    const devs = await devService.getAll();
+    return res.json(devs);
+  } catch (err) {
+    console.error(err);
+    return res.status(500).send({ message: 'Server Error' });
+  }
+};
