@@ -44,23 +44,6 @@ li.dev-item header .user-info {
   margin-top: 2px;
 }
 
-li.dev-item p {
-  color: #666;
-  font-size: 14px;
-  line-height: 20px;
-  margin-top: 10px;
-}
-
-li.dev-item a {
-  color: #8d4eff;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-li.dev-item a:hover {
-  color: 5a3ea6;
-}
-
 #app main {
   margin-left: 30px;
 }
