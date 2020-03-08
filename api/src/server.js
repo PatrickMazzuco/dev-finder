@@ -1,5 +1,6 @@
 import env from 'dotenv';
 import express from 'express';
+import cors from 'cors';
 
 import connectDB from './database/db';
 import routes from './routes';
@@ -11,6 +12,7 @@ env.config();
 connectDB();
 
 // Init middleware
+app.use(cors());
 app.use(express.json());
 
 // Init routes
