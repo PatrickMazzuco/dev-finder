@@ -2,6 +2,7 @@ import React from 'react';
 import './global.css';
 import './App.css';
 import './Sidebar.css';
+import './Main.css';
 
 const App = () => {
   return (
@@ -34,7 +35,66 @@ const App = () => {
           <button type="submit">Submit</button>
         </form>
       </aside>
-      <main></main>
+      <main>
+        <ul>
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars2.githubusercontent.com/u/32601286?s=460&v=4"
+                alt="PatrickMazzuco"
+              />
+              <div className="user-info">
+                <strong>PatrickMazzuco</strong>
+                <span>NodeJS, ReactJS</span>
+              </div>
+            </header>
+            <p>Software Engineering student at PUCRS</p>
+            <a href="https://github.com/PatrickMazzuco">Github profile</a>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars2.githubusercontent.com/u/32601286?s=460&v=4"
+                alt="PatrickMazzuco"
+              />
+              <div className="user-info">
+                <strong>PatrickMazzuco</strong>
+                <span>NodeJS, ReactJS</span>
+              </div>
+            </header>
+            <p>Software Engineering student at PUCRS</p>
+            <a href="https://github.com/PatrickMazzuco">Github profile</a>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars2.githubusercontent.com/u/32601286?s=460&v=4"
+                alt="PatrickMazzuco"
+              />
+              <div className="user-info">
+                <strong>PatrickMazzuco</strong>
+                <span>NodeJS, ReactJS</span>
+              </div>
+            </header>
+            <p>Software Engineering student at PUCRS</p>
+            <a href="https://github.com/PatrickMazzuco">Github profile</a>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img
+                src="https://avatars2.githubusercontent.com/u/32601286?s=460&v=4"
+                alt="PatrickMazzuco"
+              />
+              <div className="user-info">
+                <strong>PatrickMazzuco</strong>
+                <span>NodeJS, ReactJS</span>
+              </div>
+            </header>
+            <p>Software Engineering student at PUCRS</p>
+            <a href="https://github.com/PatrickMazzuco">Github profile</a>
+          </li>
+        </ul>
+      </main>
     </div>
   );
 };
